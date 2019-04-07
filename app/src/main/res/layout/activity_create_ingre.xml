@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createIngreName"
+        android:hint="Name"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_weight="0.05" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createIngreAmt"
+        android:hint="Amount"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_weight="0.05" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createIngreUnit"
+        android:hint="Unit"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Step"
+        android:id="@+id/createIngreNextButton"
+        android:onClick="onClickNextIngre"
+        android:textSize="20dp"
+        android:layout_weight="0.06" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add More Ingredients"
+        android:id="@+id/addMoreIngreButton"
+        android:onClick="onClickAddMoreIngre"
+        android:textSize="20dp"
+        android:layout_weight="0.05" />
+</LinearLayout>

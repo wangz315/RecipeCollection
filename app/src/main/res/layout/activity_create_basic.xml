@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instruction: split attributes by ,."
+        android:id="@+id/createBasicInstr"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06"
+        android:textIsSelectable="false"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createBasicName"
+        android:hint="Name"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createBasicTime"
+        android:hint="Time Cost (in minute)"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createBasicAttr"
+        android:hint="Attributes"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Step"
+        android:id="@+id/NextBasicbutton"
+        android:onClick="onClickNextBasic"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:textSize="20dp" />
+</LinearLayout>

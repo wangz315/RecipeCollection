@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Recipe Collection</string>
+
+    <string name="fatalError">Fatal error</string>
+    <string name="warning">Warning</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail_page">DetailPageActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/recipePoster"
+        android:layout_width="100dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/recipeTitle"
+        android:layout_width="135dp"
+        android:layout_height="79dp"
+        android:layout_toRightOf="@+id/recipePoster"
+        android:text = "Recipe Name"
+        android:gravity="center"
+        android:textColor="#7b000e"/>
+
+    <TextView
+        android:id="@+id/recipeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_toRightOf="@+id/recipeTitle"
+        android:text = "Time Cost (m)"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="#7b000e"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ff6b48"
+        android:layout_below="@+id/recipePoster"
+        android:id="@+id/view"></View>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipeList"
+        android:layout_below="@+id/recipePoster"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

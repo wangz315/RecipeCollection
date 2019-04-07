@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/createRecipe"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Steps"
+        android:id="@+id/createSteps"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.09"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Favorite"
+        android:id="@+id/addToFavourite"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:checked="false"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add More Steps"
+        android:id="@+id/addMoreStepButton"
+        android:onClick="onClickAddMoreSteps"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/createButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickDone"
+        android:textSize="20dp"
+        android:layout_weight="0.04" />
+
+</LinearLayout>
